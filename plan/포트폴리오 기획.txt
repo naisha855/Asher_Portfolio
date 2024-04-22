@@ -1,0 +1,16 @@
+Simple,
+그 안에 정교한 System, 그리고
+정성 어린 Sincere
+
+font: 에스코어드림
+
+main Color: #4169e1 (royal blue)
+orange color: #ff7722
+
+페이지
+-Home
+-Profile
+-Skill
+-Portfolio
+-Contact
+-hobby(선택)
