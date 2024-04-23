@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Freesentation-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+$Mywhite: white;
+$Myblue: #4169e1;
+  
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.Profile_left{
+    width: 50vw;
+    height: 100vh;
+    background-color: $Myblue;
+    font-weight: 800;
+    color: $Mywhite;
+    padding: 40px 80px;
+    text-align: left;
+}
+
+.Profile_right{
+    width: 50vw;
+    height: 100vh;
+
+    .profile_picture{
+        margin-top: 250px;
+        width: 500px;
+        height: 350px;
+        .profile_picture_list{
+            background-color: gray;
+        }
+    }
+
+}
+

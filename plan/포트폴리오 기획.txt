@@ -2,7 +2,8 @@ Simple,
 그 안에 정교한 System, 그리고
 정성 어린 Sincere
 
-font: 에스코어드림
+font: 프리젠테이션
+에스코어드림(X)
 
 main Color: #4169e1 (royal blue)
 orange color: #ff7722
