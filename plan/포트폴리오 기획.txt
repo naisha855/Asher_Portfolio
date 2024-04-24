@@ -15,3 +15,7 @@ orange color: #ff7722
 -Portfolio
 -Contact
 -hobby(선택)
+
+media query size:
+모바일 771px
+태블릿 991px

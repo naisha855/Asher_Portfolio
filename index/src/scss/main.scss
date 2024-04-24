@@ -9,15 +9,39 @@
 
 $Mywhite: white;
 $Myblue: #4169e1;
-  
-.container{
+
+.intro_container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image: url(../../public/img/intro_wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+
+    h1 {
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+    }
+}
+
+.swiper-slide {
+    background: none;
+}
+
+.Main {
+    position: relative;
+
+}
+
+.container {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
 }
 
-.Profile_left{
+.Profile_left {
     width: 50vw;
     height: 100vh;
     background-color: $Myblue;
@@ -27,18 +51,54 @@ $Myblue: #4169e1;
     text-align: left;
 }
 
-.Profile_right{
+.Profile_right {
     width: 50vw;
     height: 100vh;
 
-    .profile_picture{
+    .profile_picture {
         margin-top: 250px;
-        width: 500px;
-        height: 350px;
-        .profile_picture_list{
+        width: 80%;
+        height: 50%;
+
+        .profile_picture_list {
             background-color: gray;
         }
     }
 
 }
 
+.Skill_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .Skill_left {
+        width: 60%;
+        height: 70%;
+        background-color: $Mywhite;
+    }
+
+    .Skill_right {
+        width: 30%;
+        height: 80%;
+        background-color: #4169e1;
+        border-radius: 80px;
+    }
+}
+.Portfolio{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    .Portfolio_left {
+        width: 50%;
+        height: 70%;
+        background-color: $Mywhite;
+        margin-left: 100px;
+    }
+
+    .Portfolio_image {
+        width: 493px;
+        height: 60%;
+    }
+}

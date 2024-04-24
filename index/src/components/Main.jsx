@@ -3,7 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Mousewheel, Pagination } from 'swiper/modules';
 import Profile from './Profile';
 import Skill from './Skill';
-
+import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 function Main() {
   return (
@@ -16,13 +17,13 @@ function Main() {
         clickable: true,
       }}
       modules={[Mousewheel, Pagination]}
-      className="mySwiper"
+      className="Main"
       speed="1000"
     >
       <SwiperSlide><Profile /></SwiperSlide>
       <SwiperSlide><Skill /></SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
+      <SwiperSlide><Portfolio /></SwiperSlide>
+      <SwiperSlide><Contact /></SwiperSlide>
       <SwiperSlide>Slide 5</SwiperSlide>
     </Swiper>
 

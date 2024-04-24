@@ -13,6 +13,7 @@ const Profile = () => {
         grabCursor={true}
         modules={[EffectCards]}
         className="profile_picture"
+        speed="800"
       >
         <SwiperSlide className='profile_picture_list' >Slide 1</SwiperSlide>
         <SwiperSlide className='profile_picture_list' >Slide 2</SwiperSlide>
