@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Freesentation-9Black";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+.intro_container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.intro_container video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.intro_populate {
+  position: absolute;
+}
+.intro_populate h1 {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.swiper.Main .swiper-pagination {
+  width: 30%;
+  margin-bottom: 10px;
+}
+.swiper.Main .swiper-pagination .swiper-pagination-bullet {
+  opacity: 100;
+  background-color: #ffffff;
+  width: 16px;
+  height: 16px;
+  margin-right: 25px;
+}
+.swiper.Main .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #4169e1;
+  border: 3px solid #ffffff;
+}
+
+.Main {
+  position: relative;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.Profile_left {
+  width: 50vw;
+  height: 100vh;
+  background-color: #4169e1;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 40px 80px;
+  text-align: left;
+}
+
+.Profile_right {
+  width: 50vw;
+  height: 100vh;
+}
+.Profile_right .profile_picture {
+  margin-top: 250px;
+  width: 80%;
+  height: 50%;
+}
+.Profile_right .profile_picture .profile_picture_list {
+  background-color: #ffffff;
+}
+
+.Skill_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Skill_container .Skill_left {
+  width: 60%;
+  height: 80%;
+  background-image: url(../../public/img/Base.png);
+  background-size: cover;
+  background-position: center;
+}
+.Skill_container .Skill_right {
+  width: 30%;
+  height: 80%;
+  background-color: #4169e1;
+  border-radius: 80px;
+}
+.Skill_container .Skill_right ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 100px 0;
+}
+.Skill_container .Skill_right ul li {
+  letter-spacing: 5px;
+  font-weight: 1000;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.Portfolio {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.Portfolio .Portfolio_left {
+  width: 50%;
+  height: 70%;
+  background-color: #ffffff;
+  margin-left: 100px;
+}
+.Portfolio .Portfolio_left .Portfolio_explanation {
+  width: 100%;
+  height: 100%;
+}
+.Portfolio .Portfolio_image {
+  width: 493px;
+  height: 60%;
+}
+
+.Contact_wallpaper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #4169e1;
+  display: flex;
+  align-items: center;
+}
+.Contact_wallpaper .Contact_populate {
+  width: 50%;
+  height: 500px;
+}
+.Contact_wallpaper .Contact_populate .Contact_page {
+  width: 100%;
+  height: 500px;
+  background-color: #ffffff;
+  padding: 60px;
+  display: flex;
+  text-align: left;
+}
+.Contact_wallpaper .Contact_populate .Contact_page .Contact_profilepicture {
+  width: 250px;
+  height: 350px;
+  background-color: #333;
+}
+.Contact_wallpaper .Contact_populate .Contact_page .Contact_populate {
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.Contact_wallpaper .Contact_populate .Contact_page .Contact_populate h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #4169e1;
+}
+.Contact_wallpaper .Contact_populate .Contact_page .Contact_populate h6 {
+  text-align: end;
+}
+.Contact_wallpaper .Contact_populate .Contact_page .Contact_populate p {
+  margin-bottom: 20px;
+  font-weight: 600;
+}

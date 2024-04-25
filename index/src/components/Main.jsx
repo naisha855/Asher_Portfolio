@@ -24,7 +24,6 @@ function Main() {
       <SwiperSlide><Skill /></SwiperSlide>
       <SwiperSlide><Portfolio /></SwiperSlide>
       <SwiperSlide><Contact /></SwiperSlide>
-      <SwiperSlide>Slide 5</SwiperSlide>
     </Swiper>
 
   )

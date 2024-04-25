@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 const Skill = () => {
   return (
     <Container className='Skill_container'>
-    <div className='Skill_left'>inter</div>
+    <div className='Skill_left'></div>
     <div className='Skill_right'>
       <ul>
         <li>DEVELOPMENT</li>

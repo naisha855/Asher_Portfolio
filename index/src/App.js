@@ -12,15 +12,18 @@ import 'swiper/css/navigation';
 import 'swiper/css/effect-flip';
 import 'swiper/css/effect-cards';
 import Intro from './components/Intro';
-
+import 'swiper/css/scrollbar';
 
 function App() {
   return (
-    <div className="App">
+    <>
+
+      <div className="App">
       <Intro />
       <Main />
 
     </div>
+    </>
   );
 }
 
