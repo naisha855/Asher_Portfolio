@@ -4,15 +4,17 @@ import { Container } from 'react-bootstrap'
 const Skill = () => {
   return (
     <Container className='Skill_container'>
-    <div className='Skill_left'></div>
-    <div className='Skill_right'>
-      <ul>
-        <li>DEVELOPMENT</li>
-        <li>GRAPIC DESIGN</li>
-        <li>VERSON CONTROL</li>
-        <li>SERVER & DATA</li>
-      </ul>
-    </div>
+      <div className='Skill_left'>
+        <h2>SKILL</h2>
+      </div>
+      <div className='Skill_right'>
+        <ul>
+          <li>DEVELOPMENT</li>
+          <li>GRAPIC DESIGN</li>
+          <li>VERSON CONTROL</li>
+          <li>SERVER & DATA</li>
+        </ul>
+      </div>
     </Container>
   )
 }

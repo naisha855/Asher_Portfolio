@@ -8,9 +8,9 @@ const Intro = () => {
         </div>
         <div className='intro_populate'>
           <h1>
-            Simple,<br />
-            그 속에 정교한 System <br />
-            정성 어린 Sincere
+            <span>Simple,</span><br />
+            그 속에 정교한 <span>System</span> <br />
+            정성 어린 <span>Sincere</span>
           </h1>
           <div></div>
           <h6>SCROLL OPEN</h6>

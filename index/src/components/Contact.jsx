@@ -23,7 +23,7 @@ const Contact = () => {
                 <p> 010 8311 2388</p>
                 <h5>E-mail</h5>
                 <p> naisha855@gmail.com</p>
-                <h6>오른쪽 드래그로 뒷면 확인</h6>
+                <h6>왼쪽으로 드래그하여 뒷면 확인</h6>
               </div>
             </div>
           </SwiperSlide>

@@ -32,12 +32,36 @@ $MyOrange: #ff7722;
 
 .intro_populate {
     position: absolute;
+    width: 100%;
+    top: 33%;
 
     h1 {
-        margin: 0 auto;
+        font-size: 24px;
         text-align: center;
-        color: white;
+        color: $Mywhite;
+        line-height: 86px;
+        letter-spacing: 2px;
 
+        span {
+            font-size: 56px;
+        }
+
+    }
+    h6{
+        letter-spacing: 4px;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        color: $Mywhite;
+    }
+    h6:before{
+        content: '';
+        width: 185px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.3);
+        position: absolute;
+        left: -10px;
+        top: 9px;
     }
 }
 
@@ -65,8 +89,10 @@ $MyOrange: #ff7722;
 }
 
 // Profile
-.Main {
-    position: relative;
+.App {
+    .swiper-horizontal {
+        display: none;
+    }
 }
 
 .container {
@@ -82,14 +108,43 @@ $MyOrange: #ff7722;
     background-color: $Myblue;
     font-weight: 800;
     color: $Mywhite;
-    padding: 40px 80px;
+    padding: 80px 120px;
     text-align: left;
 
+    h4 {
+        margin-top: 50px;
+        font-size: 60px;
+        text-align: end;
+    }
+
+    h5 {
+        font-size: 28px;
+        font-weight: 500;
+        text-align: end;
+    }
+
+    h3 {
+        margin-top: 80px;
+        letter-spacing: 3px;
+    }
+
+    p {
+        margin-top: 80px;
+        font-weight: 400;
+
+        span {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+    }
 }
 
 .Profile_right {
     width: 50vw;
     height: 100vh;
+
+
 
     .profile_picture {
         margin-top: 250px;
@@ -103,6 +158,9 @@ $MyOrange: #ff7722;
 
 }
 
+
+
+// SKILL
 .Skill_container {
     display: flex;
     justify-content: space-around;
@@ -114,6 +172,8 @@ $MyOrange: #ff7722;
         background-image: url(../../public/img/Base.png);
         background-size: cover;
         background-position: center;
+        padding: 80px 200px;
+        text-align: left;
     }
 
     .Skill_right {
@@ -131,10 +191,19 @@ $MyOrange: #ff7722;
             padding: 100px 0;
 
             li {
+                height: 100px;
                 letter-spacing: 5px;
                 font-weight: 1000;
                 font-size: 36px;
                 color: #ffffff;
+                line-height: 100px;
+            }
+
+            li:hover {
+                background-color: $Mywhite;
+                color: $MyOrange;
+                cursor: pointer;
+                transition: 0.3s;
             }
         }
     }
@@ -151,15 +220,105 @@ $MyOrange: #ff7722;
         height: 70%;
         background-color: $Mywhite;
         margin-left: 100px;
-        .Portfolio_explanation{
+
+        .Portfolio_explanation {
             width: 100%;
             height: 100%;
+
+            .swiper-slide {
+                width: 100%;
+                height: 100%;
+                padding: 50px;
+
+                h2,
+                h3,
+                h5,
+                h6,
+                p {
+                    text-align: left;
+                }
+
+                h2 {
+
+                    font-size: 48px;
+                }
+
+                h3 {
+                    font-size: 32px;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    color: $Myblue;
+                }
+
+                .Portfolio_tag {
+                    display: flex;
+                }
+
+                h4 {
+                    width: 80px;
+                    height: 40px;
+                    line-height: 35px;
+                    border: 2px solid $MyOrange;
+                    margin: 20px 6px;
+                    color: $MyOrange;
+                    font-weight: 600;
+                }
+
+                h5 {
+                    font-size: 24px;
+                }
+
+                h6 {
+                    line-height: 35px;
+                    font-size: 18px;
+                }
+
+                p {
+                    width: 90%;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+                button {
+                    width: 150px;
+                    height: 40px;
+                    border: 2px solid $Myblue;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $Myblue;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .color_container {
+            display: flex;
+            flex-direction: row;
+
+            .color_page {
+                width: 15%;
+                height: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-right: 20px;
+
+                .color {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50px;
+                }
+            }
+        }
+
+        .swiper-scrollbar-drag {
+            background: $Myblue;
         }
     }
 
     .Portfolio_image {
         width: 493px;
-        height: 60%;
+        margin-top: 200px;
     }
 }
 
@@ -189,6 +348,7 @@ $MyOrange: #ff7722;
             }
 
             .Contact_populate {
+                width: 65%;
                 font-size: 24px;
                 font-weight: 500;
                 margin-left: 40px;
@@ -203,6 +363,8 @@ $MyOrange: #ff7722;
 
                 h6 {
                     text-align: end;
+                    margin-top: 60px;
+                    opacity: 40%;
                 }
 
                 p {
