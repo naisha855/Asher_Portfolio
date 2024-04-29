@@ -1,5 +1,5 @@
 import React from 'react'
-import { EffectFlip, Navigation } from 'swiper/modules';
+import { EffectFlip } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Contact = () => {
@@ -9,8 +9,7 @@ const Contact = () => {
         <Swiper
           effect={'flip'}
           grabCursor={true}
-          navigation={true}
-          modules={[EffectFlip, Navigation]}
+          modules={[EffectFlip]}
           className="Contact_populate"
         >
           <SwiperSlide>
@@ -29,7 +28,12 @@ const Contact = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className='Contact_page'>
+              <div className='Contact_Lastleft'>
+              <h4>Thank You!</h4>
               <p>저의 포트폴리오를 봐주셔서 감사합니다!</p>
+              <div className='Contact_Lastlogo'></div>
+              </div>
+              <div className='Contact_Lastright'></div>
             </div>
           </SwiperSlide>
         </Swiper>

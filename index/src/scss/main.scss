@@ -11,7 +11,31 @@ $Mywhite: #ffffff;
 $Myblue: #4169e1;
 $MyOrange: #ff7722;
 
+// Color list
+$Html: #d84924;
+$Css: #2299f8;
+$Javascript: #d4b830;
+$Scss: #cd6799;
+$Jquery: #0868ac;
+$Json: #000000;
+$Ajax: #1f5fa9;
+$React: #61dafb;
+$Bootstrap: #563d7c;
+$Router: #d0021b;
+$Redux: #764abc;
+$Photoshop: #31a8ff;
+$Illustrator: #ff9a00;
+$Figma: #dd5a33;
+$Github: #9b59b6;
+$Nodejs: #539e43;
+$Mysql: #3399db;
+
 // Intro
+
+.intro_wallpaper {
+    opacity: 40%;
+}
+
 .intro_container {
     width: 100vw;
     height: 100vh;
@@ -47,21 +71,27 @@ $MyOrange: #ff7722;
         }
 
     }
-    h6{
+
+    h6 {
+        width: 340px;
         letter-spacing: 4px;
         font-weight: 400;
         font-size: 20px;
         text-align: center;
         color: $Mywhite;
+        margin: 0 auto;
+        text-align: right;
+        position: relative;
     }
-    h6:before{
+
+    h6:before {
         content: '';
-        width: 185px;
+        width: 160px;
         height: 1px;
         background: rgba(255, 255, 255, 0.3);
         position: absolute;
+        bottom: 10px;
         left: -10px;
-        top: 9px;
     }
 }
 
@@ -89,12 +119,6 @@ $MyOrange: #ff7722;
 }
 
 // Profile
-.App {
-    .swiper-horizontal {
-        display: none;
-    }
-}
-
 .container {
     width: 100vw;
     height: 100vh;
@@ -174,7 +198,67 @@ $MyOrange: #ff7722;
         background-position: center;
         padding: 80px 200px;
         text-align: left;
+
+        h2{
+            font-size: 48px;
+            color: $Myblue;
+            margin-bottom: 60px;
+        }
+
+h3{
+    color: $Myblue;
+    font-weight: 600;
+}
+
+h4{
+    color: $Myblue;
+    margin-left: 30px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+h5{
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 40%;
+}
+
+        img {
+            height: 80px;
+            width: 80px;
+        }
+
+.skill_icon_title{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .skill_title_page{
+        display: flex;
+        align-items: center;
     }
+}
+
+        .skill_icon_list {
+            display: flex;
+            flex-wrap: wrap;
+
+        .skill_icon {
+            width: 120px;
+            height: 120px;
+            border: 2px solid $Photoshop;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+
+        }
+    }
+
+
 
     .Skill_right {
         width: 30%;
@@ -190,7 +274,7 @@ $MyOrange: #ff7722;
             justify-content: space-around;
             padding: 100px 0;
 
-            li {
+            .nav-link {
                 height: 100px;
                 letter-spacing: 5px;
                 font-weight: 1000;
@@ -199,7 +283,7 @@ $MyOrange: #ff7722;
                 line-height: 100px;
             }
 
-            li:hover {
+            .nav-link:hover {
                 background-color: $Mywhite;
                 color: $MyOrange;
                 cursor: pointer;
@@ -209,6 +293,7 @@ $MyOrange: #ff7722;
     }
 }
 
+// Portfolio
 .Portfolio {
     display: flex;
     align-items: center;
@@ -287,6 +372,7 @@ $MyOrange: #ff7722;
                     font-weight: 500;
                     color: $Myblue;
                     background-color: transparent;
+                    margin-left: 500px;
                 }
             }
         }
@@ -318,10 +404,12 @@ $MyOrange: #ff7722;
 
     .Portfolio_image {
         width: 493px;
-        margin-top: 200px;
+        height: 735px;
     }
 }
 
+
+// Contact
 .Contact_wallpaper {
     width: 100vw;
     height: 100vh;
@@ -340,6 +428,31 @@ $MyOrange: #ff7722;
             padding: 60px;
             display: flex;
             text-align: left;
+            justify-content: space-around;
+
+            .Contact_Lastleft {
+                h4 {
+                    font-weight: 700;
+                    font-size: 60px;
+                    color: $Myblue;
+                    letter-spacing: 5px;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 24px;
+                    margin-top: 30px;
+                    letter-spacing: 1px;
+                }
+
+                .Contact_Lastlogo {
+                    width: 150px;
+                    height: 60px;
+                    background-color: $MyOrange;
+                    margin-top: 160px;
+                }
+
+            }
 
             .Contact_profilepicture {
                 width: 250px;
@@ -371,6 +484,12 @@ $MyOrange: #ff7722;
                     margin-bottom: 20px;
                     font-weight: 600;
                 }
+            }
+
+            .Contact_Lastright {
+                width: 35%;
+                height: 100%;
+                background-color: $Myblue;
             }
         }
     }

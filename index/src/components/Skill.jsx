@@ -1,20 +1,25 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
+import React, { useState } from 'react'
+import { Container, Nav } from 'react-bootstrap'
+import TabSkill from './TabSkill'
+
 
 const Skill = () => {
+
+  let [tab, setTab] = useState(0);
+
   return (
     <Container className='Skill_container'>
       <div className='Skill_left'>
-        <h2>SKILL</h2>
+        <TabSkill className='Skill_left' tab={tab} />
       </div>
-      <div className='Skill_right'>
+      <Nav variant="tabs" defaultActiveKey="link0" className='Skill_right'>
         <ul>
-          <li>DEVELOPMENT</li>
-          <li>GRAPIC DESIGN</li>
-          <li>VERSON CONTROL</li>
-          <li>SERVER & DATA</li>
+          <Nav.Link onClick={() => { setTab(1) }}>PROGRAMMING</Nav.Link>
+          <Nav.Link onClick={() => { setTab(2) }}>GRAPIC DESIGN</Nav.Link>
+          <Nav.Link onClick={() => { setTab(3) }}>VERSON CONTROL</Nav.Link>
+          <Nav.Link onClick={() => { setTab(4) }}>SERVER & DATA</Nav.Link>
         </ul>
-      </div>
+      </Nav>
     </Container>
   )
 }

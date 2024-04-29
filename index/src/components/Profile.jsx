@@ -17,7 +17,7 @@ const Profile = () => {
           화려하고 멋있는 것을 저는 정말 좋아하지만 <br />
           <span>USER</span> 가 <span>INTERFACE</span> 를 보고 접하며 느낄 때,  <br />
           쾌적한 기분을 느끼게 할 수 있는가 <br />
-          에 대한 안정성을 우선으로 선호합니다.
+          에 대한 안정성을 우선 선호합니다.
         </p>
       </div>
       <div className='Profile_right'>

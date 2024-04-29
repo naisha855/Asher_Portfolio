@@ -6,6 +6,7 @@ import Skill from './Skill';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 
+
 function Main() {
   return (
 

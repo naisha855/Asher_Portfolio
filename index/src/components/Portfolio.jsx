@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFlip, Navigation, Scrollbar } from 'swiper/modules';
+import { EffectFlip, Navigation, Scrollbar, Controller } from 'swiper/modules';
+
 
 const Portfolio = () => {
+
+    const [firstSwiper, setFirstSwiper] = useState(null);
+    const [secondSwiper, setSecondSwiper] = useState(null);
 
     return (
         <>
@@ -12,8 +16,10 @@ const Portfolio = () => {
                         scrollbar={{
                             hide: true,
                         }}
-                        modules={[Scrollbar]}
+                        modules={[Scrollbar, Controller]}
                         className="Portfolio_explanation"
+                        onSwiper={setFirstSwiper}
+                        controller={{ control: secondSwiper }}
                     >
                         <SwiperSlide>
                             <h2>SIDE SHOW: STAR WARS</h2>
@@ -185,10 +191,10 @@ const Portfolio = () => {
                 <Swiper
                     effect={'flip'}
                     grabCursor={true}
-                    pagination={true}
-                    navigation={true}
-                    modules={[EffectFlip, Navigation]}
+                    modules={[EffectFlip, Controller]}
                     className="Portfolio_image"
+                    onSwiper={setSecondSwiper}
+                    controller={{ control: firstSwiper }}
                 >
                     <SwiperSlide>
                         <img src={process.env.PUBLIC_URL + '/img/SIDESHOW_STARWARS_FigureShop.png'} />
@@ -197,7 +203,7 @@ const Portfolio = () => {
                         <img src={process.env.PUBLIC_URL + '/img/Bookoa_BookShop.png'} />
                     </SwiperSlide>
                     <SwiperSlide>
-
+                    <img src={process.env.PUBLIC_URL + '/img/Alice_into_the_New_world.png'} />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={process.env.PUBLIC_URL + '/img/Healfo.png'} />
