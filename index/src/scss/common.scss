@@ -7,6 +7,9 @@
     font-style: normal;
 }
 
+$Mywhite: #ffffff;
+$Myblue: #4169e1;
+
 body{
   background-color: black;
 }
@@ -45,4 +48,22 @@ a{
 
   .swiper-slide {
     background: none;
+}
+
+.swiper.Main {
+  .swiper-pagination {
+      width: 30%;
+      margin-bottom: 10px;
+      .swiper-pagination-bullet {
+          opacity: 100;
+          background-color: $Mywhite;
+          width: 16px;
+          height: 16px;
+          margin-right: 25px;
+          &-active {
+              background-color: $Myblue;
+              border: 3px solid $Mywhite;
+          }
+      }
+  }
 }

@@ -14,7 +14,7 @@ const Contact = () => {
         >
           <SwiperSlide>
             <div className='Contact_page'>
-              <div className='Contact_profilepicture'>img</div>
+              <div className='Contact_profilepicture'></div>
               <div className='Contact_populate'>
                 <h5>name</h5>
                 <p>서 영석</p>
@@ -30,7 +30,7 @@ const Contact = () => {
             <div className='Contact_page'>
               <div className='Contact_Lastleft'>
               <h4>Thank You!</h4>
-              <p>저의 포트폴리오를 봐주셔서 감사합니다!</p>
+              <p>저의 포트폴리오를 봐주셔서 감사합니다.</p>
               <div className='Contact_Lastlogo'></div>
               </div>
               <div className='Contact_Lastright'></div>

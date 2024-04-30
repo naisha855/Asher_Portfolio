@@ -2,30 +2,33 @@
 https://blog.naver.com/red0808/222159632340?trackingCode=blog_bloghome_searchlist
 
 선배님들 포트폴리오
-
 https://cyh272036.github.io/cyh/
-
-https://chaehwan3294.github.io/total/work
-
 https://yoang31.github.io/
-
 https://jjs06.github.io/
-
 https://chohoney99.github.io/
 
 유사 별자리
 https://vincentgarreau.com/particles.js/
-
 효과 사이트
 https://blog.naver.com/red0808/222316817441
 
 Title
-
 https://imweb.me/?utm_source=gg&utm_medium=sa_gg_trf_servicekeyword2_st2_both_nu_click&utm_campaign=2311_web_createsite_mf1844_all_cu_keyword_general1_all_all&utm_term=%EC%9B%B9%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4&gad_source=1&gclid=EAIaIQobChMIsJ3I-K_XhQMV0dgWBR3SoAaXEAAYAyAAEgL66vD_BwE
-
 이거 좋네
-
 https://www.movementk.com/?utm_source=google&utm_medium=cpc&utm_campaign=%EB%AC%B4%EB%B8%8C%EB%A8%BC%ED%8A%B8%EC%BC%80%EC%9D%B4_%ED%91%9C%EC%A4%80%EC%8B%9C%EA%B0%84&utm_conterm=%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A6%AC%EB%89%B4%EC%96%BC&ACE_REF=adwords_g&ACE_KW=%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A6%AC%EB%89%B4%EC%96%BC&gad_source=1&gclid=EAIaIQobChMI56jBnq_XhQMVSuoWBR1cLQ0gEAAYASAAEgK4APD_BwE
 
 Swiper wheel
 https://swiperjs.com/demos#mousewheel-control
+
+- 효과
+참고
+https://swiperjs.com/react
+이건 개인
+https://velog.io/@leejpsd/Swiper-%EC%98%B5%EC%85%98-%EC%A0%95%EB%A6%AC
+(마우스 효과도 괜찮고 네비도 괜찮고)
+
+- 구현(사진, 이미지)
+영상
+https://blog.naver.com/red0808/223264361232
+
+- 반응형(X)
