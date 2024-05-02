@@ -5,13 +5,15 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
-};
+}
+
+;
 
 @font-face {
-    font-family:'Vitro_core';
-src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff')format('woff');
-font-weight: normal;
-font-style:normal;
+    font-family: 'Vitro_core';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 $Mywhite: #ffffff;
@@ -36,6 +38,8 @@ $Figma: #dd5a33;
 $Github: #9b59b6;
 $Nodejs: #539e43;
 $Mysql: #3399db;
+$Kakaotalk: #fae100;
+$Kakaotalkbrown: #371d1e;
 
 // Intro
 .intro_wallpaper {
@@ -78,7 +82,7 @@ $Mysql: #3399db;
             line-height: 86px;
             letter-spacing: 2px;
 
-            .intro_blue{
+            .intro_blue {
                 color: $Myblue;
                 font-size: 24px;
             }
@@ -86,7 +90,7 @@ $Mysql: #3399db;
             span {
                 font-size: 56px;
 
-                .intro_blue{
+                .intro_blue {
                     color: $Myblue;
                     font-size: 56px;
                 }
@@ -136,25 +140,21 @@ $Mysql: #3399db;
     color: $Mywhite;
     padding: 80px 120px;
     text-align: left;
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
     transform: translateY(-100%);
 
     &.start {
         transform: translateY(0);
     }
 
-h2{
-    font-weight: 1000;
-}
-
     h3 {
-        font-weight: 200;
-        margin-top: 60px;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        height: 255px;
+        font-weight: 800;
         letter-spacing: 3px;
-        line-height: 85px;
-        span{
-            font-weight: 600;
-        }
+        line-height: 70px;
+        white-space: pre-wrap;
     }
 
     h4 {
@@ -163,26 +163,83 @@ h2{
         text-align: end;
     }
 
-    h5 {
-        font-size: 24px;
-        font-weight: 500;
-        text-align: end;
-        font-family:'Vitro_core';
-        letter-spacing: 1px;
-        margin-top: 10px;
-    }
+    // h5 {
+    //     font-size: 24px;
+    //     font-weight: 500;
+    //     text-align: end;
+    //     font-family: 'Vitro_core';
+    //     letter-spacing: 1px;
+    //     margin-top: 10px;
+    // }
 
+h5{
+    font-size:60px;
+    font-weight:bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    color:#ffd800;
+    letter-spacing:0px;
+    transition:1s;
+    -webkit-transition:1s;
+    -ms-transition:1s;
+    position: relative;
+    padding:10px;
+}
 
+h5:before,
+h5:after{
+  content:"";
+  position: absolute;
+  height: 7px;
+  width: 0px;
+  background:#ffd800;
+  transition:300ms;
+  -webkit-transition:1s;
+  -ms-transition:1s;
+  opacity:0.3;
+  left:50%;
+}
+
+h5:before{
+  bottom:0;
+ 
+}
+
+h5:after{
+  top:0;
+  
+}
+
+h5:hover{
+    letter-spacing:30px;
+  }
+  
+  h5:hover:before,
+  h5:hover:after{
+     width: 95%;
+      opacity:1;
+    left:0;
+  
+  }
+  h5:hover{
+    opacity:0;
+  }
 
     p {
         margin-top: 60px;
         font-weight: 400;
-
+        opacity: 0;
+        margin-left: 50px;
         span {
             font-size: 24px;
             font-weight: 700;
             letter-spacing: 1px;
-            
+        }
+
+        &.start {
+            opacity: 1;
+            margin-left: 0;
+            transition: 2s;
         }
     }
 }
@@ -230,13 +287,13 @@ h2{
             font-size: 48px;
             color: $Myblue;
             margin-bottom: 30px;
-            font-family:'Vitro_core'
+            font-family: 'Vitro_core'
         }
 
         h3 {
             color: $Myblue;
             font-weight: 600;
-            font-family:'Vitro_core'
+            font-family: 'Vitro_core'
         }
 
         h4 {
@@ -253,7 +310,7 @@ h2{
             opacity: 40%;
             text-align: right;
             margin-bottom: 30px;
-            
+
         }
 
         img {
@@ -316,7 +373,7 @@ h2{
 
                 h6 {
                     transition: 0.5s;
-                    opacity: 75%;
+                    opacity: 100%;
                 }
             }
         }
@@ -329,7 +386,8 @@ h2{
         height: 80%;
         background-color: #4169e1;
         border-radius: 80px;
-        font-family:'Vitro_core';
+        font-family: 'Vitro_core';
+
         ul {
             width: 100%;
             height: 100%;
@@ -477,22 +535,49 @@ h2{
 .Contact_wallpaper {
     width: 100vw;
     height: 100vh;
-    background-color: $Myblue;
     display: flex;
     align-items: center;
+    background-color: black;
+
+    .Contact_main {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../../public/img/Contact_main.jpg);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        opacity: 50%;
+    }
+
+    .Contact {
+        background-color: #ffffff;
+
+    }
 
     .Contact_populate {
         width: 50%;
-        height: 500px;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+
+        .Contact_title {
+            width: 100%;
+            height: 40%;
+            position: absolute;
+            background-image: url(../../public/img/Contact_wallpaper.jpg);
+            background-position: center;
+            background-size: cover;
+        }
 
         .Contact_page {
             width: 100%;
             height: 500px;
-            background-color: $Mywhite;
             padding: 60px;
             display: flex;
             text-align: left;
             justify-content: space-around;
+            position: relative;
 
             .Contact_Lastleft {
                 h4 {
@@ -500,7 +585,7 @@ h2{
                     font-size: 60px;
                     color: $Myblue;
                     letter-spacing: 5px;
-                    font-family:'Vitro_core';
+                    font-family: 'Vitro_core';
                 }
 
                 p {
@@ -538,16 +623,18 @@ h2{
                     margin-bottom: 10px;
                     font-weight: 800;
                     letter-spacing: 1px;
-                    color: $Myblue;
+                    color: $Kakaotalkbrown;
+                    margin-top: 155px;
                 }
 
                 h6 {
                     text-align: end;
-                    margin-top: 60px;
+                    margin-top: 50px;
                     opacity: 40%;
                 }
 
                 p {
+                    font-size: 20px;
                     margin-bottom: 20px;
                     font-weight: 600;
                 }

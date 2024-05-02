@@ -4,10 +4,8 @@ import { EffectFlip, Scrollbar, Controller } from 'swiper/modules';
 
 
 const Portfolio = () => {
-
     const [firstSwiper, setFirstSwiper] = useState(null);
     const [secondSwiper, setSecondSwiper] = useState(null);
-    
 
     return (
         <>

@@ -1,6 +1,4 @@
 import './App.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Mousewheel, EffectFade } from 'swiper/modules';
 import Intro from './components/Intro';
 import Main from './components/Main';
 
@@ -14,8 +12,16 @@ import 'swiper/css/navigation';
 import 'swiper/css/effect-flip';
 import 'swiper/css/effect-cards';
 import 'swiper/css/scrollbar';
+import { useEffect, useState } from 'react';
 
 function App() {
+ const [load,setLoad] = useState(false); 
+
+ useEffect(()=>{
+  setTimeout(()=>{
+    setLoad(true)
+  },3000)
+ },[])
 
   // let swiper = new Swiper('.stop_swiper', {
   //   freeMode : false
@@ -24,20 +30,10 @@ function App() {
   return (
     <>
       <div className="App">
-        {/* <Swiper
-          mousewheel={true}
-
-          className="Main"
-          modules={[Mousewheel, EffectFade]}
-          speed={1000}
-        >
-          <SwiperSlide className='stop_swiper'>            */}
               <Intro></Intro>              
-          {/* </SwiperSlide>
-          <SwiperSlide>            */}
-              <Main></Main>         
-          {/* </SwiperSlide>
-        </Swiper> */}
+            {
+              load ? <Main></Main> :null
+            }
       </div>
     </>
   );
