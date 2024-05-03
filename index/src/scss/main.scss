@@ -148,7 +148,7 @@ $Kakaotalkbrown: #371d1e;
     }
 
     h3 {
-        margin-top: 100px;
+        margin-top: 70px;
         margin-bottom: 40px;
         height: 255px;
         font-weight: 800;
@@ -163,73 +163,30 @@ $Kakaotalkbrown: #371d1e;
         text-align: end;
     }
 
-    // h5 {
-    //     font-size: 24px;
-    //     font-weight: 500;
-    //     text-align: end;
-    //     font-family: 'Vitro_core';
-    //     letter-spacing: 1px;
-    //     margin-top: 10px;
-    // }
+    h5 {
+        font-size: 26px;
+        font-weight: 500;
+        text-align: end;
+        font-family: 'Vitro_core';
+        letter-spacing: 1px;
+        margin-top: 40px;
+        width: 0;
+        white-space:nowrap;
+        overflow:hidden;
+        transition: 4s;
+        
+        &.start {
+            width: 100%;
+        }
+    }
 
-h5{
-    font-size:60px;
-    font-weight:bold;
-    font-family: 'Montserrat', sans-serif;
-    text-align:center;
-    color:#ffd800;
-    letter-spacing:0px;
-    transition:1s;
-    -webkit-transition:1s;
-    -ms-transition:1s;
-    position: relative;
-    padding:10px;
-}
-
-h5:before,
-h5:after{
-  content:"";
-  position: absolute;
-  height: 7px;
-  width: 0px;
-  background:#ffd800;
-  transition:300ms;
-  -webkit-transition:1s;
-  -ms-transition:1s;
-  opacity:0.3;
-  left:50%;
-}
-
-h5:before{
-  bottom:0;
- 
-}
-
-h5:after{
-  top:0;
-  
-}
-
-h5:hover{
-    letter-spacing:30px;
-  }
-  
-  h5:hover:before,
-  h5:hover:after{
-     width: 95%;
-      opacity:1;
-    left:0;
-  
-  }
-  h5:hover{
-    opacity:0;
-  }
 
     p {
         margin-top: 60px;
         font-weight: 400;
         opacity: 0;
         margin-left: 50px;
+
         span {
             font-size: 24px;
             font-weight: 700;
@@ -282,6 +239,14 @@ h5:hover{
         background-position: center;
         padding: 80px 200px;
         text-align: left;
+        margin-left: 100px;
+        opacity: 0;
+
+        &.start {
+            margin-left: 0px;
+            opacity: 1;
+            transition: 2s;
+        }
 
         h2 {
             font-size: 48px;
@@ -557,13 +522,63 @@ h5:hover{
     .Contact_populate {
         width: 50%;
         height: auto;
-        display: flex;
-        justify-content: space-around;
         position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        .Contact_QR {
+            width: 100px;
+            height: 100px;
+            background-color: $Bootstrap;
+        }
+
+        .Contact_info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Contact_name,
+        .Contact_Tel,
+        .Contact_E-mail {
+            width: 300px;
+            height: 60px;
+        }
+
+        .Contact_Tel,
+        .Contact_E-mail {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .Contact_text {
+            margin-left: 20px;
+        }
+
+        h5 {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: $Kakaotalkbrown;
+
+        }
+
+        h6 {
+            text-align: end;
+            opacity: 40%;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            color: $Kakaotalkbrown;
+        }
 
         .Contact_title {
             width: 100%;
-            height: 40%;
+            height: 30%;
             position: absolute;
             background-image: url(../../public/img/Contact_wallpaper.jpg);
             background-position: center;
@@ -576,8 +591,29 @@ h5:hover{
             padding: 60px;
             display: flex;
             text-align: left;
-            justify-content: space-around;
             position: relative;
+            flex-direction: column;
+
+            .Contact_profile {
+                display: flex;
+
+                h3 {
+                    font-size: 50px;
+                    margin-left: 30px;
+                    margin-top: 100px;
+
+                    span {
+                        font-size: 34px;
+                    }
+                }
+
+                .Contact_profilepicture {
+                    width: 250px;
+                    height: 250px;
+                    background-color: #333;
+                    border-radius: 50%;
+                }
+            }
 
             .Contact_Lastleft {
                 h4 {
@@ -602,49 +638,21 @@ h5:hover{
                     background-color: $MyOrange;
                     margin-top: 160px;
                 }
-
             }
 
-            .Contact_profilepicture {
-                width: 250px;
-                height: 250px;
-                background-color: #333;
+            .Contact_nameicon {
+                width: 60px;
+                height: 60px;
+                background-color: #000000;
                 border-radius: 50%;
             }
+        }
 
-            .Contact_populate {
-                width: 65%;
-                font-size: 24px;
-                font-weight: 500;
-                margin-left: 40px;
+        .Contact_Lastright {
+            width: 35%;
+            height: 100%;
+            background-color: $Myblue;
 
-                h5 {
-                    font-size: 24px;
-                    margin-bottom: 10px;
-                    font-weight: 800;
-                    letter-spacing: 1px;
-                    color: $Kakaotalkbrown;
-                    margin-top: 155px;
-                }
-
-                h6 {
-                    text-align: end;
-                    margin-top: 50px;
-                    opacity: 40%;
-                }
-
-                p {
-                    font-size: 20px;
-                    margin-bottom: 20px;
-                    font-weight: 600;
-                }
-            }
-
-            .Contact_Lastright {
-                width: 35%;
-                height: 100%;
-                background-color: $Myblue;
-            }
         }
     }
 

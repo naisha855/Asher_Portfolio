@@ -14,25 +14,34 @@ const Contact = () => {
           className="Contact_populate"
         >
           <SwiperSlide className='Contact'>
-          <div className='Contact_title'></div>
+            <div className='Contact_title'></div>
             <div className='Contact_page'>
-              <div className='Contact_profilepicture'></div>
+              <div className='Contact_profile'>
+                <div className='Contact_profilepicture'></div>
+                <h3>서 영석<span>, Youngsuk Seo</span></h3>
+              </div>
               <div className='Contact_populate'>
-                <div className='Contact_name'>
-                <h5>name</h5>
-                <p>서 영석</p>
+                <div className='Contact_info'>
+                  <div className='Contact_Tel'>
+                    <div className='Contact_nameicon'></div>
+                    <div className='Contact_text'>
+                      <h5>Phone</h5>
+                      <p> 010 8311 2388</p>
+                    </div>
+                  </div>
+                  <div className='Contact_E-mail'>
+                    <div className='Contact_nameicon'></div>
+                    <div className='Contact_text'>
+                      <h5>E-mail</h5>
+                      <p> naisha855@gmail.com</p>
+                    </div>
+                  </div>
                 </div>
-                                <div className='Contact_name'>
-                <h5>Phone</h5>
-                <p> 010 8311 2388</p>
-                </div>
-                                <div className='Contact_name'>
-                <h5>E-mail</h5>
-                <p> naisha855@gmail.com</p>
+                <div className='Contact_QR'></div>
                 <h6>왼쪽으로 드래그하여 뒷면 확인</h6>
-                </div>
               </div>
             </div>
+
           </SwiperSlide>
           <SwiperSlide className='Contact'>
             <div className='Contact_page'>

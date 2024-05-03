@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container } from 'react-bootstrap'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper/modules';
@@ -32,7 +32,7 @@ const Profile = () => {
       <div className={'Profile_left ' + inout}>
         <h2>ABOUT ME</h2>
         <h4>Hello!!</h4>
-        <h5>모두에게 느낌있는 프론트엔드 개발자가 되기를 꿈꾸는</h5>
+        <h5 className={inout}>모두에게 느낌있는 프론트엔드 개발자가 되기를 꿈꾸는</h5>
         <div className='Name_page_txt'>
           <ul>
             <h3>{nametyp}</h3>
