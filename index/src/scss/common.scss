@@ -1,69 +1,83 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: 'Freesentation-9Black';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'Freesentation-9Black';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
 }
 
 $Mywhite: #ffffff;
 $Myblue: #4169e1;
 
-body{
+body {
   background-color: black;
 }
 
-.nav-link{
+.nav-link {
   border: none;
 }
 
-.body{
-    font-family: 'Freesentation-9Black';
+.body {
+  font-family: 'Freesentation-9Black';
 }
 
-a{
+a {
   text-decoration-line: none;
 }
 
 .swiper {
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  width: 100vw;
+  height: 100vh;
+}
 
-  h3{
-    font-size: 50px;
-  }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 
-  .swiper-slide {
-    background: none;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+.swiper-slide {
+  background: none;
 }
 
 .swiper.Main {
   .swiper-pagination {
-      width: 30%;
-      margin-bottom: 10px;
-      .swiper-pagination-bullet {
-          opacity: 100;
-          background-color: $Mywhite;
-          width: 16px;
-          height: 16px;
-          margin-right: 25px;
-          &-active {
-              background-color: $Myblue;
-              border: 3px solid $Mywhite;
-          }
+    width: 30%;
+    margin-bottom: 10px;
+    left: 80px;
+    bottom: 40px;
+
+    .swiper-pagination-bullet {
+      opacity: 100;
+      background-color: $Mywhite;
+      width: 16px;
+      height: 16px;
+      margin-right: 25px;
+
+      &-active {
+        background-color: $Myblue;
+        border: 3px solid $Mywhite;
       }
+    }
+  }
+
+  .swiper-pagination::before {
+    content: '';
+    width: 130px;
+    height: 3px;
+    background: $Mywhite;
+    position: absolute;
+    bottom: 12px;
+    left: 40px;
   }
 }

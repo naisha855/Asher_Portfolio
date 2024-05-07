@@ -53,10 +53,9 @@ const Profile = () => {
           className="profile_picture"
           speed="800"
         >
-          <SwiperSlide className='profile_picture_list' >Slide 1</SwiperSlide>
-          <SwiperSlide className='profile_picture_list' >Slide 2</SwiperSlide>
-          <SwiperSlide className='profile_picture_list' >Slide 3</SwiperSlide>
-
+          <SwiperSlide className='profile_picture_list Profile_cap1'></SwiperSlide>
+          <SwiperSlide className='profile_picture_list Profile_cap2'></SwiperSlide>
+          <SwiperSlide className='profile_picture_list Profile_cap3'></SwiperSlide>
         </Swiper>
       </div>
     </Container>

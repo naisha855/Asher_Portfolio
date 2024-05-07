@@ -1,16 +1,24 @@
 import React, { useEffect, useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiperSlide } from 'swiper/react';
 import { EffectFlip, Scrollbar, Controller } from 'swiper/modules';
 
 
 const Portfolio = () => {
     const [firstSwiper, setFirstSwiper] = useState(null);
     const [secondSwiper, setSecondSwiper] = useState(null);
+    const [start, setStart] = useState('');
+    const swiperSlide = useSwiperSlide();
+
+    if (swiperSlide.isActive) {
+        setTimeout(() => {
+          setStart('start')
+        }, 600)
+      }
 
     return (
         <>
             <div className='Portfolio'>
-                <div className='Portfolio_left'>
+                <div className={' Portfolio_left ' + start}>
                     <Swiper
                         scrollbar={{
                             hide: true,
@@ -191,7 +199,7 @@ const Portfolio = () => {
                     effect={'flip'}
                     grabCursor={true}
                     modules={[EffectFlip, Controller]}
-                    className="Portfolio_image"
+                    className={" Portfolio_image " + start}
                     onSwiper={setSecondSwiper}
                     controller={{ control: firstSwiper }}
                 >
