@@ -26,43 +26,43 @@ const TabSkill = (props) => {
                 <h2>Coding Skill</h2>
                 <div className='skill_icon_list'>
                     <div className='skill_icon' style={{ borderColor: '#d84924' }}>
-                        <img src={process.env.PUBLIC_URL + '/img/Html.png'} />
+                        <img src={process.env.PUBLIC_URL + '/img/html.png'} />
                         <h6 style={{color: '#d84924'}}>웹 접근성과 <br />표준성 준수 <br />시맨틱 태그를 <br />이용한 <br />마크업 가능</h6>
                     </div>
                     <div className='skill_icon' style={{ borderColor: '#2299f8' }}>
-                        <img src={process.env.PUBLIC_URL + '/img/Css.png'} />
+                        <img src={process.env.PUBLIC_URL + '/img/css.png'} />
                         <h6 style={{color: '#2299f8'}}>Flex를 이용한 <br />반응형 웹을 <br />제작할 수 있음</h6>
                     </div>
                     <div className='skill_icon' style={{ borderColor: '#d4b830' }}>
-                        <img src={process.env.PUBLIC_URL + '/img/Javascript.png'} />
+                        <img src={process.env.PUBLIC_URL + '/img/javascript.png'} />
                         <h6 style={{color: '#d4b830'}}>Javascript의 <br />타이핑, <br />이미지 등<br />효과 구현 가능</h6>
                     </div>
                     <div className='skill_icon' style={{ borderColor: '#cd6799' }}>
-                        <img src={process.env.PUBLIC_URL + '/img/Scss.png'} />
+                        <img src={process.env.PUBLIC_URL + '/img/scss.png'} />
                         <h6 style={{color: '#cd6799'}}>네스팅과 <br />Sassscript를 <br />활용해 <br />효과적으로 <br />스타일시트 정리</h6>
                     </div>
                     <div className='skill_icon' style={{ borderColor: '#563d7c' }}>
-                        <img src={process.env.PUBLIC_URL + '/img/Bootstrap.png'} />
+                        <img src={process.env.PUBLIC_URL + '/img/bootstrap.png'} />
                         <h6 style={{color: '#563d7c'}}>CDN을 불러와 <br />프로젝트에 <br />맞게 추가 및<br /> 수정 가능</h6>
                     </div>
                     <div className='skill_icon' style={{ borderColor: '#0868ac' }}>
-                        <img src={process.env.PUBLIC_URL + '/img/Jquery.png'} />
+                        <img src={process.env.PUBLIC_URL + '/img/jquery.png'} />
                         <h6 style={{color: '#0868ac'}}>관련된 <br />라이브러리와 <br />메소드를 잘 <br />활용할 수 있다</h6>
                     </div>
                     <div className='skill_icon' style={{ borderColor: '#000000' }}>
-                        <img src={process.env.PUBLIC_URL + '/img/Json.png'} />
+                        <img src={process.env.PUBLIC_URL + '/img/json.png'} />
                         <h6 style={{color: '#000000'}}>문법 구조의 <br />이해 및 GET, <br />POST 방식의 <br />파라미터 <br />전송 가능 </h6>
                     </div>
                     <div className='skill_icon' style={{ borderColor: '#1f5fa9' }}>
-                        <img src={process.env.PUBLIC_URL + '/img/Ajax.png'} />
+                        <img src={process.env.PUBLIC_URL + '/img/ajax.png'} />
                         <h6 style={{color: '#1f5fa9'}}>OPEN API를 <br />통해 서버에서 <br />필요한 데이터를 <br />불러 수동작업을<br /> 줄일 수 있음</h6>
                     </div>
                     <div className='skill_icon' style={{ borderColor: '#61dafb' }}>
-                        <img src={process.env.PUBLIC_URL + '/img/React.png'} />
+                        <img src={process.env.PUBLIC_URL + '/img/react.png'} />
                         <h6 style={{color: '#61dafb'}}>npm 프로그램 <br />활용 및 <br />작업개체 <br />컴포넌트화 가능 </h6>
                     </div>
                     <div className='skill_icon' style={{ borderColor: '#764abc' }}>
-                        <img src={process.env.PUBLIC_URL + '/img/Redux.png'} />
+                        <img src={process.env.PUBLIC_URL + '/img/redux.png'} />
                         <h6 style={{color: '#764abc'}}>데이터 상태 <br />관리를 통해 <br />장바구니 등을 <br />구현할 수 있음</h6>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ const TabSkill = (props) => {
                 <h2 style={{ color: "#764abc" }}>Design Skill</h2>
                 <div className='skill_icon_list'>
                     <div className='skill_icon'>
-                        <img src={process.env.PUBLIC_URL + '/img/Photoshop.png'} />
+                        <img src={process.env.PUBLIC_URL + '/img/photoshop.png'} />
                         <h6 style={{color: "#31a8ff"}}>포토샵 합성과 <br />효과를 이용한 <br /> 사진 보정, <br />포스터 제작 가능</h6>
                     </div>
                     <div className='skill_icon' style={{ borderColor: '#ff9a00' }}>
@@ -94,7 +94,7 @@ const TabSkill = (props) => {
                 <h2 style={{ color: "#539e43" }}>Version Save</h2>
                 <div className='skill_icon_list'>
                     <div className='skill_icon' style={{ borderColor: '#9b59b6' }}>
-                        <img src={process.env.PUBLIC_URL + '/img/Github.png'} />
+                        <img src={process.env.PUBLIC_URL + '/img/github.png'} />
                         <h6 style={{color: '#9b59b6'}}>명령어를 사용한 <br />레파지토리 <br />접근과<br /> 버전 관리가 <br />가능</h6>
                     </div>
                 </div>
@@ -106,11 +106,11 @@ const TabSkill = (props) => {
                 <h2 style={{ color: "#d4b830" }}>Data Loading</h2>
                 <div className='skill_icon_list'>
                     <div className='skill_icon' style={{ borderColor: '#539e43' }}>
-                        <img src={process.env.PUBLIC_URL + '/img/Nodejs.png'} />
+                        <img src={process.env.PUBLIC_URL + '/img/nodejs.png'} />
                         <h6 style={{color: '#539e43'}}>파일, 서버 <br />생성과 데이터 <br />연결 가능</h6>
                     </div>
                     <div className='skill_icon' style={{ borderColor: '#3399db' }}>
-                        <img src={process.env.PUBLIC_URL + '/img/Mysql.png'} />
+                        <img src={process.env.PUBLIC_URL + '/img/mysql.png'} />
                         <h6 style={{color: '#3399db'}}>테이블 및 <br />데이터 생성, <br />읽기, 추가, <br />삭제 가능 </h6>
                     </div>
                 </div>

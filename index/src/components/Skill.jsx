@@ -3,24 +3,25 @@ import { Container, Nav } from 'react-bootstrap'
 import TabSkill from './TabSkill'
 import { useSwiperSlide } from 'swiper/react';
 
-
 const Skill = () => {
 
   let [tab, setTab] = useState(0);
   const [start, setStart] = useState('');
   const [start2, setStsrt2] = useState('');
-  const swiperSlide = useSwiperSlide();
+  const swiperSlide = useSwiperSlide(); 
+
+  const activeStyle = {
+    color: '#ff7722',
+    backgroundColor: '#ffffff',
+  };
 
     if (swiperSlide.isActive) {
       setTimeout(() => {
         setStart('start')
-      }, 600)
-    }
-
-    if (swiperSlide.isActive) {
+      }, 500)
       setTimeout(() => {
         setStsrt2('start2')
-      }, 1500)
+      }, 1300)
     }
 
   return (
@@ -32,10 +33,10 @@ const Skill = () => {
 
       <Nav variant="tabs" defaultActiveKey="link0" className={' Skill_right ' + start2} >
         <ul>
-          <Nav.Link onClick={() => { setTab(1) }}>PROGRAMMING</Nav.Link>
-          <Nav.Link onClick={() => { setTab(2) }}>GRAPIC DESIGN</Nav.Link>
-          <Nav.Link onClick={() => { setTab(3) }}>VERSON CONTROL</Nav.Link>
-          <Nav.Link onClick={() => { setTab(4) }}>SERVER & DATA</Nav.Link>
+          <Nav.Link onClick={() => { setTab(1) }} style={tab===1 ? activeStyle : {}}>PROGRAMMING</Nav.Link>
+          <Nav.Link onClick={() => { setTab(2) }} style={tab===2 ? activeStyle : {}}>GRAPIC DESIGN</Nav.Link>
+          <Nav.Link onClick={() => { setTab(3) }} style={tab===3 ? activeStyle : {}}>VERSON CONTROL</Nav.Link>
+          <Nav.Link onClick={() => { setTab(4) }} style={tab===4 ? activeStyle : {}}>SERVER & DATA</Nav.Link>
         </ul>
       </Nav>
     </Container>

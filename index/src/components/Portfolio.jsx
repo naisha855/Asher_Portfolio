@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Swiper, SwiperSlide, useSwiperSlide } from 'swiper/react';
 import { EffectFlip, Scrollbar, Controller } from 'swiper/modules';
 
@@ -7,12 +7,19 @@ const Portfolio = () => {
     const [firstSwiper, setFirstSwiper] = useState(null);
     const [secondSwiper, setSecondSwiper] = useState(null);
     const [start, setStart] = useState('');
+    const [start2, setStart2] = useState('');
     const swiperSlide = useSwiperSlide();
 
     if (swiperSlide.isActive) {
         setTimeout(() => {
           setStart('start')
-        }, 600)
+        }, 1300)
+      }
+
+      if (swiperSlide.isActive) {
+        setTimeout(() => {
+          setStart2('start2')
+        }, 500)
       }
 
     return (
@@ -23,6 +30,7 @@ const Portfolio = () => {
                         scrollbar={{
                             hide: true,
                         }}
+                        grabCursor={true}
                         modules={[Scrollbar, Controller]}
                         className="Portfolio_explanation"
                         onSwiper={setFirstSwiper}
@@ -199,7 +207,7 @@ const Portfolio = () => {
                     effect={'flip'}
                     grabCursor={true}
                     modules={[EffectFlip, Controller]}
-                    className={" Portfolio_image " + start}
+                    className={" Portfolio_image " + start2}
                     onSwiper={setSecondSwiper}
                     controller={{ control: firstSwiper }}
                 >
