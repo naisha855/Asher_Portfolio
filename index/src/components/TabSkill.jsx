@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 const TabSkill = (props) => {
     let { tab } = props;
+    const [title, setTitle] = useState('');
+  
+    useEffect(() => {
+        setTimeout(() => {
+          setTitle('start')
+        }, 1000)
+      }, [])
+
+// setInterval
 
     if (tab === 0) {
         return (
             <>
-                <div className='skill_icon_title'>
+                <div className=' skill_icon_title ' >
                     <h3>저는 이런걸 할 수 있습니다</h3>
                     <div className='skill_title_page'>
                         <img src={process.env.PUBLIC_URL + '/img/Design.png'} />

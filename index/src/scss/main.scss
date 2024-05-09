@@ -178,7 +178,7 @@ $Kakaotalkbrown: #371d1e;
         width: 0;
         white-space: nowrap;
         overflow: hidden;
-        transition: 4s;
+        transition: 2s;
 
         &.start3 {
             width: 100%;
@@ -274,7 +274,14 @@ $Kakaotalkbrown: #371d1e;
         h3 {
             color: $Myblue;
             font-weight: 600;
-            font-family: 'Vitro_core'
+            font-family: 'Vitro_core';
+            // margin-left: 50px;
+            // opacity: 0;
+            // &.open{
+            //     margin-left: 0;
+            //     opacity: 1;
+            //     transition: 0.5s;
+            // }
         }
 
         h4 {
@@ -283,6 +290,13 @@ $Kakaotalkbrown: #371d1e;
             letter-spacing: 1px;
             line-height: 25px;
             font-weight: 500;
+            // margin-top: 30px;
+            // opacity: 0;
+            // &.open{
+            //     margin-top: 0;
+            //     transition: 0.5s;
+            //     opacity: 1;
+            // }
         }
 
         h5 {
@@ -291,12 +305,24 @@ $Kakaotalkbrown: #371d1e;
             opacity: 40%;
             text-align: right;
             margin-bottom: 30px;
-
+// opacity: 0;
+// &.open{
+//     transition: 0.5s;
+//     opacity: 1;
+// }
         }
 
         img {
             height: 80px;
             width: 80px;
+//                 transform: scale(0);
+//                 opacity: 0;
+// &.open{
+// opacity: 1;
+// transition: 0.5s;
+// transform: scale(1);
+// }
+
         }
 
         .skill_icon_title {
@@ -308,6 +334,7 @@ $Kakaotalkbrown: #371d1e;
             .skill_title_page {
                 display: flex;
                 align-items: center;
+
             }
         }
 
@@ -591,16 +618,31 @@ $Kakaotalkbrown: #371d1e;
             justify-content: space-between;
         }
 
+.Contact_data{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
         .Contact_QR {
-            width: 100px;
-            height: 100px;
-            background-color: $Bootstrap;
+            width: 120px;
+            height: 120px;
+            background-image: url(../../public/img/kakaoQR.png);
+            background-position: center;
+            background-size: cover;
+            border: 2px solid $Kakaotalk;
+            margin-right: 30px ;
         }
 
         .Contact_info {
-            width: 100%;
+            width: 60%;
             display: flex;
             flex-direction: column;
+            margin-top: 30px;
         }
 
         .Contact_name,

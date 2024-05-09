@@ -13,13 +13,13 @@ const Portfolio = () => {
     if (swiperSlide.isActive) {
         setTimeout(() => {
           setStart('start')
-        }, 1300)
+        }, 1800)
       }
 
       if (swiperSlide.isActive) {
         setTimeout(() => {
           setStart2('start2')
-        }, 500)
+        }, 1000)
       }
 
     return (

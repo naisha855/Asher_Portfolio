@@ -11,7 +11,7 @@ const Profile = () => {
   const [inout5, setInout5] = useState('');
   const [inout6, setInout6] = useState('');
   const [nametyp, setNametyp] = useState('');
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   useEffect(() => {
     setTimeout(() => {
@@ -19,21 +19,21 @@ const Profile = () => {
     }, 100)
     setTimeout(() => {
       setInout2('start2')
-    }, 1000)
+    }, 600)
     setTimeout(() => {
       setInout3('start3')
-    }, 2300)
+    }, 1300)
     setTimeout(() => {
       setInout5('start5')
-    }, 9000)
+    }, 5000)
     setTimeout(() => {
       setInout6('start6')
-    }, 10000)
+    }, 5500)
   }, [])
 
   useEffect(() => {
     const myName = "저의 이름은 \n서영석 \n입니다. ";
-    const delay = 6000; // 3초 딜레이
+    const delay = 3000; // 3초 딜레이
     // 3초 후에 setInterval 시작
     const timer = setTimeout(() => {
       let count = 0; // 초기 카운트
@@ -41,7 +41,7 @@ const Profile = () => {
       const interval = setInterval(() => {
         // 현재 state 가져오기
         setNametyp(prevNametyp => prevNametyp + myName[count]);
-        setCount(prevCount => prevCount + 1);
+        // setCount(prevCount => prevCount + 1);
 
         // 모든 글자가 출력되면 clearInterval
         if (count === myName.length - 2) {
@@ -49,7 +49,7 @@ const Profile = () => {
         }
 
         count++; // 카운트 증가
-      }, 150);
+      }, 100);
 
       // setInterval을 반환하기 전에 clearInterval 함수 실행
       return () => clearInterval(interval);
