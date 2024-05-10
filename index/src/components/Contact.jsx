@@ -11,6 +11,7 @@ const Contact = () => {
   const [start5, setStart5] = useState('');
   const [start6, setStart6] = useState('');
   const [start7, setStart7] = useState('');
+  const [start8, setStart8] = useState('');
   const swiperSlide = useSwiperSlide();
 
   if (swiperSlide.isActive) {
@@ -35,6 +36,9 @@ const Contact = () => {
     setTimeout(() => {
       setStart7('start7')
     }, 3100)
+    setTimeout(() => {
+      setStart8('start8')
+    }, 3300)
   }
 
 
@@ -76,8 +80,8 @@ const Contact = () => {
                   </div>
 
                   <div className='Contact_data'>
-                    <div className='Contact_QR'></div>
-                    <h6>왼쪽으로 드래그하여 뒷면 확인</h6>
+                    <div className={' Contact_QR ' + start8}></div>
+                    <h6 className={start8}>왼쪽으로 드래그하여 뒷면 확인</h6>
                   </div>
                 </div>
               </div>

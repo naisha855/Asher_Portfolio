@@ -162,7 +162,8 @@ $Kakaotalkbrown: #371d1e;
         font-size: 60px;
         text-align: end;
         transform: scale(0);
-        &.start2{
+
+        &.start2 {
             transform: scale(1);
             transition: 1s;
         }
@@ -229,13 +230,22 @@ $Kakaotalkbrown: #371d1e;
 
 }
 
-.Profile_cap3 {
-    padding: 10px;
-    background-image: url(../../public/img/Profile3.jpg);
-    background-position: center;
-    background-size: cover;
-    border: 20px solid $Mywhite;
-}
+// .Profile_cap2 {
+//     padding: 10px;
+//     background-image: url(../../public/img/Profile2.jpg);
+//     background-position: center;
+//     background-size: cover;
+//     border: 20px solid $Mywhite;
+// }
+
+
+// .Profile_cap3 {
+//     padding: 10px;
+//     background-image: url(../../public/img/Profile3.jpg);
+//     background-position: center;
+//     background-size: cover;
+//     border: 20px solid $Mywhite;
+// }
 
 
 // SKILL
@@ -275,13 +285,14 @@ $Kakaotalkbrown: #371d1e;
             color: $Myblue;
             font-weight: 600;
             font-family: 'Vitro_core';
-            // margin-left: 50px;
-            // opacity: 0;
-            // &.open{
-            //     margin-left: 0;
-            //     opacity: 1;
-            //     transition: 0.5s;
-            // }
+            margin-left: 50px;
+            opacity: 0;
+
+            &.open {
+                margin-left: 0;
+                opacity: 1;
+                transition: 0.5s;
+            }
         }
 
         h4 {
@@ -290,13 +301,14 @@ $Kakaotalkbrown: #371d1e;
             letter-spacing: 1px;
             line-height: 25px;
             font-weight: 500;
-            // margin-top: 30px;
-            // opacity: 0;
-            // &.open{
-            //     margin-top: 0;
-            //     transition: 0.5s;
-            //     opacity: 1;
-            // }
+            margin-top: 30px;
+            opacity: 0;
+
+            &.open3 {
+                margin-top: 0;
+                transition: 0.5s;
+                opacity: 1;
+            }
         }
 
         h5 {
@@ -305,24 +317,20 @@ $Kakaotalkbrown: #371d1e;
             opacity: 40%;
             text-align: right;
             margin-bottom: 30px;
-// opacity: 0;
-// &.open{
-//     transition: 0.5s;
-//     opacity: 1;
-// }
+            opacity: 0;
+
+            &.open4 {
+                transition: 0.5s;
+                opacity: 1;
+            }
+
+
+
         }
 
         img {
             height: 80px;
             width: 80px;
-//                 transform: scale(0);
-//                 opacity: 0;
-// &.open{
-// opacity: 1;
-// transition: 0.5s;
-// transform: scale(1);
-// }
-
         }
 
         .skill_icon_title {
@@ -330,6 +338,20 @@ $Kakaotalkbrown: #371d1e;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+
+            img {
+                height: 80px;
+                width: 80px;
+                transform: scale(0);
+                opacity: 0;
+    
+                &.open2 {
+                    opacity: 1;
+                    transition: 0.5s;
+                    transform: scale(1);
+                }
+    
+            }
 
             .skill_title_page {
                 display: flex;
@@ -384,7 +406,7 @@ $Kakaotalkbrown: #371d1e;
                     opacity: 100%;
                 }
             }
-            
+
         }
     }
 
@@ -618,15 +640,15 @@ $Kakaotalkbrown: #371d1e;
             justify-content: space-between;
         }
 
-.Contact_data{
-    width: 40%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: space-around;
-    margin-top: 30px;
-}
+        .Contact_data {
+            width: 40%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
 
         .Contact_QR {
             width: 120px;
@@ -635,7 +657,13 @@ $Kakaotalkbrown: #371d1e;
             background-position: center;
             background-size: cover;
             border: 2px solid $Kakaotalk;
-            margin-right: 30px ;
+            margin-right: 30px;
+            opacity: 0;
+
+            &.start8 {
+                transition: 0.5s;
+                opacity: 1;
+            }
         }
 
         .Contact_info {
@@ -680,7 +708,9 @@ $Kakaotalkbrown: #371d1e;
             background-size: cover;
             opacity: 0;
             margin-left: 50px;
-            &.start4 , &.start5{
+
+            &.start4,
+            &.start5 {
                 margin-left: 0;
                 transition: 0.5s;
                 opacity: 1;
@@ -690,7 +720,9 @@ $Kakaotalkbrown: #371d1e;
         .Contact_text {
             margin-left: 80px;
             opacity: 0;
-            &.start6, &.start7{
+
+            &.start6,
+            &.start7 {
                 margin-left: 20px;
                 transition: 0.5s;
                 opacity: 1;
@@ -709,7 +741,12 @@ $Kakaotalkbrown: #371d1e;
 
         h6 {
             text-align: end;
-            opacity: 40%;
+            opacity: 0;
+
+            &.start8 {
+                opacity: 40%;
+                transition: 0.5s;
+            }
         }
 
         p {
@@ -746,21 +783,23 @@ $Kakaotalkbrown: #371d1e;
 
                 h3 {
                     font-size: 50px;
-                    margin-left: 100px ;
+                    margin-left: 100px;
                     margin-top: 100px;
                     color: $Myblue;
-                        opacity: 0;
-                        &.start2{
+                    opacity: 0;
+
+                    &.start2 {
                         transition: 0.5s;
                         margin-left: 30px;
                         opacity: 1;
-                        }
+                    }
+
                     span {
                         font-size: 34px;
                         color: $Kakaotalkbrown;
                         opacity: 0;
 
-                        &.start3{
+                        &.start3 {
                             transition: 0.5s;
                             opacity: 90%;
                         }
@@ -792,7 +831,7 @@ $Kakaotalkbrown: #371d1e;
         text-align: left;
         position: relative;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
 
         .Contact_Lastleft {
             text-align: center;
@@ -822,9 +861,9 @@ $Kakaotalkbrown: #371d1e;
 
     }
 
-    .Contact_Lastright {
-        width: 35%;
-        height: 100%;
-        background-color: $Myblue;
-    }
+    // .Contact_Lastright {
+    //     width: 35%;
+    //     height: 100%;
+    //     background-color: $Myblue;
+    // }
 }

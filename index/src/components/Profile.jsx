@@ -32,7 +32,7 @@ const Profile = () => {
   }, [])
 
   useEffect(() => {
-    const myName = "저의 이름은 \n서영석 \n입니다. ";
+    const myName = "저의의 이름은 \n서영석 \n입니다. ";
     const delay = 3000; // 3초 딜레이
     // 3초 후에 setInterval 시작
     const timer = setTimeout(() => {
@@ -42,13 +42,13 @@ const Profile = () => {
         // 현재 state 가져오기
         setNametyp(prevNametyp => prevNametyp + myName[count]);
         // setCount(prevCount => prevCount + 1);
-
+count++; // 카운트 증가
         // 모든 글자가 출력되면 clearInterval
-        if (count === myName.length - 2) {
+        if (count === myName.length - 1) {
           clearInterval(interval);
         }
 
-        count++; // 카운트 증가
+        
       }, 100);
 
       // setInterval을 반환하기 전에 clearInterval 함수 실행
