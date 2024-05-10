@@ -32,7 +32,7 @@ const Profile = () => {
   }, [])
 
   useEffect(() => {
-    const myName = "저의의 이름은 \n서영석 \n입니다. ";
+    const myName = "제제 이름은 \n서영석 \n입니다. ";
     const delay = 3000; // 3초 딜레이
     // 3초 후에 setInterval 시작
     const timer = setTimeout(() => {
