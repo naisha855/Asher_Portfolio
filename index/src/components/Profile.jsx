@@ -71,10 +71,10 @@ count++; // 카운트 증가
           </ul>
         </div>
         <p className={inout5}>
-          화려하고 멋있는 것을 저는 정말 좋아하지만 <br />
-          <span>USER</span> 가 <span>INTERFACE</span> 를 보고 접하며 느낄 때,  <br />
-          쾌적한 기분을 느끼게 할 수 있는가 <br />
-          에 대한 안정성을 우선 선호합니다.
+          화려하고 멋있는 것을 저는 정말 좋아합니다. 하지만, <br />
+          <span>USER</span> 가 <span>INTERFACE</span> 를 보았을 때,  <br />
+          편리한 기분을 느끼게 할 수 있는가 <br />
+          에 대한 편리성을 우선 생각하고자 합니다.
         </p>
       </div>
       <div className={'Profile_right ' + inout6} >
